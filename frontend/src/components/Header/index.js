@@ -1,27 +1,26 @@
 import React from "react";
+import "./style.css";
+import { GoPerson } from "react-icons/go";
+import { IoMdExit } from "react-icons/io";
 
 import { useHistory } from "react-router-dom";
 
-import "./style.scss";
-import PersonIcon from "@material-ui/icons/Person";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
-
 const Header = () => {
-  const history = useHistory("/");
+    const history = useHistory("/");
 
-  const Direct = () => {
-    history.push("/");
-  };
+    const Direct = () => {
+        history.push("/");
+    };
 
-  return (
-    <header className="header">
-      <h1>REQRES</h1>
-      <div>
-        <PersonIcon className="icon" />
-        <ExitToAppIcon className="icon" onClick={() => Direct()} />
-      </div>
-    </header>
-  );
+    return (
+        <header className="header">
+            <p className="title">Get Users</p>
+            <div className="icons">
+                <GoPerson className="icon" />
+                <IoMdExit className="icon" onClick={() => Direct()} />
+            </div>
+        </header>
+    );
 };
 
 export default Header;
