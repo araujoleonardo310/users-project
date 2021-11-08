@@ -6,6 +6,8 @@
     
     display: flex;
     
+    box-shadow: 1px 1px 10px #b4b4b4;
+    
     background: #fff;
 }
 

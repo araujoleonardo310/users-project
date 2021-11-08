@@ -4,7 +4,7 @@ import "./style.css"
 import HomeServices from "./services.js";
 import Header from "../../components/Header";
 
-import { Form } from "react-bootstrap";
+import { Form, Modal } from "react-bootstrap";
 import { toast } from "react-hot-toast";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
 
     const List = async () => {
         const { data } = await HomeServices.listUsers();
-        setUsers(data.data);
+        setUsers(data);
     };
 
     const openModal = () => {
@@ -29,7 +29,7 @@ const Home = () => {
     }
 
     const Save = async () => {
-        const playload = {
+        const payload = {
             email: email,
             first_name: name,
             password: password,
@@ -53,23 +53,21 @@ const Home = () => {
             <div className="home-card">
                 <div className="home-card-header">
                     <h3>Comunidade</h3>
-                    <button onClick={() => openModal()}>Adicionar Usuário</button>
+                    <button className="button" onClick={() => openModal()}>Adicionar Usuário</button>
                 </div>   
 
-                <ul>
-                    {users.map((item) => (
-                        <li>
-                            <span>
-                                {item.name}
-                            </span>
-                            <span>
-                                {item.email}
-                            </span>
-                        </li>
-                    ))}
-                </ul>                 
+                <div>
+                   {
+                       users.map((item) => (
+                           <div className="users-div">
+                               <span className="name">{item.name}</span>
+                               <span className="email">{item.email}</span>
+                           </div>
+                       ))
+                   }
+                </div>                 
             </div>
-            <Modal show={show} handleclose={handleclose} save={save}>
+            <Modal show={show} handleclose={handleclose} save={Save}>
                 <Form.Control
                     placeholder="Digite seu nome" 
                     className="mb-1"

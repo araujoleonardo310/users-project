@@ -19,3 +19,5 @@ const ModalUser = ({ show, handleClose, children, save }) => {
         </Modal>
     )
 }
+
+export default ModalUser;

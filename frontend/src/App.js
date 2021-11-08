@@ -1,15 +1,17 @@
 import React from "react";
 import "./style/global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "../src/pages/Home";
+
+import Routes from "./routes";
+import { Toaster } from "react-hot-toast"
+import { GlobalProvider } from "./context";
 
 function App() {
   return (
-    <div className="App">
-      <Home>
-
-      </Home>
-    </div>
+   <GlobalProvider>
+     <Routes />
+     <Toaster positon="top-right" duration="4000" />     
+   </GlobalProvider>
   );
 }
 

@@ -1,5 +1,7 @@
 {
     "users": [
-      {}
+      {
+        "name": "Marianne", "email": "marianne.gomes02@gmail.com", "password": "senha123"
+      }
     ]
   }
