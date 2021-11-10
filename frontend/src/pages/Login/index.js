@@ -16,6 +16,10 @@ const Login = () => {
 
     const { setToken } = useContext(GlobalContext);
 
+    const Cadastro = () => {
+        history.push(``);
+    }
+
     const LoginUser = async (event) => {
         event.preventDefault();
 
@@ -40,20 +44,22 @@ const Login = () => {
 
     return (
         <section className="section-login">
-            <div className="container-illustration">
-                <div>
-                    <p>Welcomeeee!</p>
-                    <LottieFile name="login" />
-                </div>
-            </div>
             <div className="container-form">
-                <form>
-                    <span>Login</span>
-                    <input type='text' placeholder="email" onChange={(event) => setEmail(event.target.value)}/>
-                    <input type="password" placeholder="Senha" onChange={(event) => setPassword(event.target.value)}/>
-                    <button onClick={(event) => LoginUser(event)}>Entrar</button>
+                <form className="form">
+                    <p className="form-title">Welcomeeee!</p>
+                    <input type='text' placeholder="Digite seu email" onChange={(event) => setEmail(event.target.value)} className="input"/>
+                    <input type="password" placeholder="Digite sua senha" onChange={(event) => setPassword(event.target.value)}  className="input"/>
+                    <div className="buttons">
+                        <button onClick={(event) => LoginUser(event)} className="button">Entrar</button>
+                        <button onClick={() => {history.push("/Cadastro")}} className="button cadastro">Cadastro</button>
+                    </div>
                 </form>
             </div>
+            
+            <div className="container-illustration">                               
+                <LottieFile name="login" />
+            </div>
+            
         </section>
     );
 };

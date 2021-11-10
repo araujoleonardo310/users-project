@@ -1,7 +1,26 @@
 {
-    "users": [
-      {
-        "name": "Marianne", "email": "marianne.gomes02@gmail.com", "password": "senha123"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Marianne",
+      "email": "marianne.gomes02@gmail.com",
+      "password": "senha123"
+    },
+    {
+      "id": 2,
+      "name": "Leonardo",
+      "email": "leonardo@gmail.com",
+      "password": "senha123"
+    },
+    {
+      "email": "marianne.gomes02@gmail.com",
+      "password": "senha123",
+      "id": 3
+    },
+    {
+      "email": "marianne.gomes02@gmail.com",
+      "password": "senha123",
+      "id": 4
+    }
+  ]
+}

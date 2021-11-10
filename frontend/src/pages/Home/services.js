@@ -5,8 +5,8 @@ class HomeServices {
         return api.get("/users")
     }
 
-    static register(data) {
-        return api.post("/register")
+    static delete(id) {
+        return api.delete(`/users/${id}`)
     }
 }
 

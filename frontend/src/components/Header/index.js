@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className="header">
             <p className="title">Get Users</p>
-            <div className="icons">
+            <div className="icons-container">
                 <GoPerson className="icon" />
                 <IoMdExit className="icon" onClick={() => Direct()} />
             </div>

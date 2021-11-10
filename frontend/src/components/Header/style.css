@@ -19,16 +19,19 @@
     width: 80%;
 
     font-size: 1.5em;
-    font-style: oblique;
     font-weight: 700;
+    font-style: oblique;
 
 }
 
-.icons {
+.icons-container {
     width: 10%;
-    
-    font-size: 1.5em;
+
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: space-around;
+
+    font-size: 1.2em;   
+
+    color: #03473a;
 }

@@ -13,3 +13,8 @@ body, div, p, input {
 body {
     background: #f2f3f6;
 }
+
+input {
+    letter-spacing: 0.2rem;
+    
+}
