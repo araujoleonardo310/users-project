@@ -8,10 +8,10 @@ import { GlobalProvider } from "./context";
 
 function App() {
   return (
-   <GlobalProvider>
-     <Routes />
-     <Toaster positon="top-right" duration="4000" />     
-   </GlobalProvider>
+    <GlobalProvider>
+      <Routes />
+      <Toaster positon="top-right" duration="4000" />
+    </GlobalProvider>
   );
 }
 

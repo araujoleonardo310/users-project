@@ -67,6 +67,9 @@
     align-items: center;    
     font-size: 1.2em;    
 }
+.icons button {
+    border: none;
+}
 
 .trash {
     color: rgb(238, 45, 45);

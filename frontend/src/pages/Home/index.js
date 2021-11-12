@@ -22,7 +22,7 @@ const Home = () => {
         List();
     }
 
-    const Editar = async(id) => {
+    const Editar = async (id) => {
         history.push(`/Cadastro/${id}`);
     }
 
@@ -36,28 +36,28 @@ const Home = () => {
             <div className="home-card">
                 <div className="home-card-header">
                     <h3>Comunidade</h3>
-                </div>   
+                </div>
                 <div>
-                   {
-                       users.map((item) => (
-                           <div className="users-div">
+                    {
+                        users.map((item) => (
+                            <div className="users-div">
                                 <span className="name">{item.name}</span>
-                                <span className="email">{item.email}</span>  
+                                <span className="email">{item.email}</span>
                                 <div className="icons">
                                     <button onClick={() => Deletar(item.id)}>
-                                        <BsTrashFill className="trash" />   
+                                        <BsTrashFill className="trash" />
                                     </button>
                                     <button>
-                                        <FaEdit onClick={() => Editar(item.id)}/>                          
+                                        <FaEdit onClick={() => Editar(item.id)} />
                                     </button>
-                                </div>                             
-                           </div>
-                       ))
-                   }
-                </div>                 
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </setion>
-    );    
+    );
 }
 
 export default Home;

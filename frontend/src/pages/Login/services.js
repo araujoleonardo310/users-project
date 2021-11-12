@@ -1,9 +1,9 @@
 import api from "../../services";
 
 class LoginServices {
-    static login(data) {
-        return api.post("/users", data);
-    }
-}
+    static login() {
+        return api.get("/users");
+    };
+};
 
 export default LoginServices;
