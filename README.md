@@ -108,16 +108,25 @@
 
 <br>
 
-* ✔️ Primeiras noções de funcionamento e criação de um app com react
-* ✔️ Noções de userStates
-* ✔️ Desestruturação de objetos e arrays
-* ✔️ Noções de servidor
-* ✔️ Noções de rotas de endereços
-* ✔️ Noções de componentes
-* ✔️ Práticas de programação
-* ✔️ Manipulação de elementos root do React
-* ✔️ Noções de arrow functions 
-* ✔️ Noções de map e filter
+✔️ Primeiras noções de funcionamento e criação de um app com react
+
+✔️ Noções de userStates
+
+✔️ Desestruturação de objetos e arrays
+
+✔️ Noções de servidor
+
+✔️ Noções de rotas de endereços
+
+✔️ Noções de componentes
+
+✔️ Práticas de programação
+
+✔️ Manipulação de elementos root do React
+
+✔️ Noções de arrow functions 
+
+✔️ Noções de map e filter
 
 <br>
 
