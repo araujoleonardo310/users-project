@@ -56,20 +56,31 @@ INDICE
 
 4 - Na pasta frontend, instale o package “node_module” com o comando ***npm install***
 
+<br>
+
 <img src="project-assets/npm-install.png">
 
 <br>
 
 5 - Depois de instalado o package, digite no terminal da pasta backend o comando ***json-server --watch db.json***
+
+<br>
+
 <img src="project-assets/json-server.png">
 
 <br>
 
-6 - Volte para o terminal da pasta frontend e digite o comando npm start ou yarn start (caso tenha o yarn instalado )
+6 - Volte para o terminal da pasta frontend e digite o comando npm start ou yarn start (caso tenha o yarn instalado)
 
-    > Aparecerá uma mensagem padrão no terminal frontend e, ela lhe perguntará se você aceita mudar o endereço da aplicação. 
+<br>
+
+>Aparecerá uma mensagem padrão no terminal frontend e, ela lhe perguntará se você aceita mudar o endereço da aplicação. 
+
+<br>
 
 7 - Digite “***s ou y***” para aceitar ou “***n***” para desistir.
+
+<br>
 <img src="project-assets/mensage.png">
 
 
