@@ -21,7 +21,6 @@ const Cadastro = () => {
 
   const handleClose = () => {
     setShow(false);
-    toast.error("Usuário Não registrado!!");
   };
 
   const openModal = () => {
