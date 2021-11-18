@@ -22,7 +22,7 @@
 
 <h3 id="status">Status</h3><br>
 
-***Concluíndo*** 🚀💻
+***Concluído*** 🚀💻
 
 <br>
 
